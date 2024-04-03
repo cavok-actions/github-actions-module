@@ -30,7 +30,7 @@ runs:
               "type": "section",
               "text": {
                 "type": "mrkdwn",
-                "text": "Environment : ${{ inputs.environment }}, Deploy Result : ${{ inputs.DEPLOY_STEP_STATUS }}, Repository : ${{ github.repository }}."
+                "text": "Environment : ${{ inputs.ENVIRONMENT }}, Deploy Result : ${{ inputs.DEPLOY_STEP_STATUS }}, Repository : ${{ github.repository }}."
               }
             }
           ]
