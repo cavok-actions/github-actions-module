@@ -28,5 +28,6 @@ runs:
       git checkout -b ${{ inputs.HEAD }}
       git push origin ${{ inputs.HEAD }}
   - name: create pr
+    shell: bash
     run: |
       gh pr create --base ${{ inputs.BASE }} --head ${{ inputs.HEAD }} --title "${{ inputs.HEAD }} -> master" --body "release pr"

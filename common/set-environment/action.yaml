@@ -33,4 +33,5 @@ runs:
         fi
       fi
   - name: check env
+    shell: bash
     run: echo ${{ steps.set-env.outputs.environment }}
